@@ -11,10 +11,10 @@ export const ButtonSubmit = () => {
   );
 };
 
-export const ButtonLoader = () => {
+export const ButtonLoader = ({ nextPageHandler }) => {
   return (
-    <button type="submit" className={s.buttonSubmit}>
-      <AiOutlineSearch className={s.buttonSubmitSvg} size={18} />
+    <button type="button" className={s.ButtonLoader} onClick={nextPageHandler}>
+      Load more
     </button>
   );
 };
