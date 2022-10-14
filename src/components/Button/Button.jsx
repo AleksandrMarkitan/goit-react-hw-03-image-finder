@@ -1,4 +1,4 @@
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 import { AiOutlineSearch } from 'react-icons/ai';
 import s from './Button.module.scss';
@@ -18,8 +18,6 @@ export const ButtonLoader = ({ nextPageHandler }) => {
     </button>
   );
 };
-// DeleteButton.propTypes = {
-//   type: PropTypes.string.isRequired,
-//   contactId: PropTypes.string.isRequired,
-//   contactDelete: PropTypes.func.isRequired,
-// };
+ButtonLoader.propTypes = {
+  nextPageHandler: PropTypes.func.isRequired,
+};

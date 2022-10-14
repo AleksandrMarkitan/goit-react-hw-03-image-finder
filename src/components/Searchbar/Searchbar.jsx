@@ -1,4 +1,4 @@
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import { Component } from 'react';
 import { toast } from 'react-toastify';
 import { ButtonSubmit } from '../Button/Button';
@@ -49,6 +49,6 @@ export class Searchbar extends Component {
   }
 }
 
-// ContactForm.propTypes = {
-//   addContact: PropTypes.func.isRequired,
-// };
+Searchbar.propTypes = {
+  onSubmit: PropTypes.func.isRequired,
+};

@@ -1,6 +1,5 @@
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import { ImageGalleryItem } from '../ImageGalleryItem/ImageGalleryItem';
-// import { ButtonLoader } from '../Button/Button';
 import s from './ImageGallery.module.scss';
 
 export const ImageGallery = ({ images, openModal }) => {
@@ -17,8 +16,7 @@ export const ImageGallery = ({ images, openModal }) => {
   );
 };
 
-// ContactList.propTypes = {
-//   contacts: PropTypes.array.isRequired,
-//   filter: PropTypes.string.isRequired,
-//   contactDelete: PropTypes.func.isRequired,
-// };
+ImageGallery.propTypes = {
+  images: PropTypes.array.isRequired,
+  openModal: PropTypes.func.isRequired,
+};

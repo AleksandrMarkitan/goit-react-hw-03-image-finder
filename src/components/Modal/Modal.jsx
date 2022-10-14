@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { Component } from 'react';
 import s from '../Modal/Modal.module.scss';
 export class Modal extends Component {
@@ -34,3 +35,8 @@ export class Modal extends Component {
     );
   }
 }
+
+Modal.propTypes = {
+  url: PropTypes.string.isRequired,
+  closeModal: PropTypes.func.isRequired,
+};
